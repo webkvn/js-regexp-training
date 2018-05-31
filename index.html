@@ -7,6 +7,68 @@
     <title>js-regexp-training</title>
 </head>
 <body>
-    
+<script>
+    //    var str = '123456789';
+    //    var reg = /\D/;
+    //    if (reg.test(str)) {
+    //        alert('不全是数字！');
+    //    } else {
+    //        alert('全是数字!');
+    //    }
+
+    //    var str = 'abcdef';
+    //    var reg = /c/i;
+    //    alert(str.search(reg));
+
+    //    var str = 'adf124klkjlkj45323klj21412jk24';
+    //    var reg = /\d+/g;
+    //    console.log(str.match(reg));
+
+    //    var str = '不要问我太阳有多高,我会告诉你我有多真.';
+    //    var reg = /我|太阳/g;
+    //    var str2 = str.replace(reg, '*');
+    //    alert(str2);
+
+//    var str = '不要问我太阳有多高,我会告诉你我有多真.';
+//    var reg = /我|太阳/g;
+//    var str2 = str.replace(reg, function (str) {
+//        var result = '';
+//        for (var i = 0; i < str.length; i++) {
+//            result += '*';
+//        }
+//        return result;
+//    });
+//    alert(str2);
+
+//    var str='2018-5-31';
+//    var reg=/(\d+)(-)/g;
+//    str2 = str.replace(reg,function($0,$1,$2){
+//        return $1+'.';
+//    });
+//    alert(str2);
+
+//    var testStr='now test001 test002';
+//    var reg=/test(\d+)/;
+//    var str='';
+//    var str=reg.exec(testStr);
+//    alert(str);
+//    alert(str.length);
+//    alert(str.input);
+//    alert(str[0]);
+//    alert(str[1]);
+//    alert(str.index);
+
+//    var str='<div class="b">hahahah </div> 找出标签<div class="b"></div>';
+//    var reg=/<[^>]+>/g;
+//    var str2=str.match(reg);
+//    console.log(str2);
+
+    var str='onetwo';
+    var str2='one two';
+    var reg=/one\b/;
+    alert(reg.test(str));
+    alert(reg.test(str2));
+
+</script>
 </body>
 </html>
