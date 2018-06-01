@@ -29,45 +29,61 @@
     //    var str2 = str.replace(reg, '*');
     //    alert(str2);
 
-//    var str = '不要问我太阳有多高,我会告诉你我有多真.';
-//    var reg = /我|太阳/g;
-//    var str2 = str.replace(reg, function (str) {
-//        var result = '';
-//        for (var i = 0; i < str.length; i++) {
-//            result += '*';
-//        }
-//        return result;
-//    });
-//    alert(str2);
+    //    var str = '不要问我太阳有多高,我会告诉你我有多真.';
+    //    var reg = /我|太阳/g;
+    //    var str2 = str.replace(reg, function (str) {
+    //        var result = '';
+    //        for (var i = 0; i < str.length; i++) {
+    //            result += '*';
+    //        }
+    //        return result;
+    //    });
+    //    alert(str2);
 
-//    var str='2018-5-31';
-//    var reg=/(\d+)(-)/g;
-//    str2 = str.replace(reg,function($0,$1,$2){
-//        return $1+'.';
-//    });
-//    alert(str2);
+    //    var str='2018-5-31';
+    //    var reg=/(\d+)(-)/g;
+    //    str2 = str.replace(reg,function($0,$1,$2){
+    //        return $1+'.';
+    //    });
+    //    alert(str2);
 
-//    var testStr='now test001 test002';
-//    var reg=/test(\d+)/;
-//    var str='';
-//    var str=reg.exec(testStr);
+    //    var testStr='now test001 test002';
+    //    var reg=/test(\d+)/;
+    //    var str='';
+    //    var str=reg.exec(testStr);
+    //    alert(str);
+    //    alert(str.length);
+    //    alert(str.input);
+    //    alert(str[0]);
+    //    alert(str[1]);
+    //    alert(str.index);
+
+    //    var str='<div class="b">hahahah </div> 找出标签<div class="b"></div>';
+    //    var reg=/<[^>]+>/g;
+    //    var str2=str.match(reg);
+    //    console.log(str2);
+
+    //    var str='onetwo';
+    //    var str2='one two';
+    //    var reg=/one\b/;
+    //    alert(reg.test(str));
+    //    alert(reg.test(str2));
+
+//    var reg = /^[1-9]\d{4,11}$/;
+//    var qq = '1234';
+//    var str = reg.test(qq);
 //    alert(str);
-//    alert(str.length);
-//    alert(str.input);
-//    alert(str[0]);
-//    alert(str[1]);
-//    alert(str.index);
 
-//    var str='<div class="b">hahahah </div> 找出标签<div class="b"></div>';
-//    var reg=/<[^>]+>/g;
-//    var str2=str.match(reg);
-//    console.log(str2);
+//    function trim(str){
+//        var reg=/^\s+|\s$/g;
+//        return str.replace(reg,'');
+//    }
+//    alert(trim('  11  '));
 
-    var str='onetwo';
-    var str2='one two';
-    var reg=/one\b/;
-    alert(reg.test(str));
-    alert(reg.test(str2));
+    var reg={
+        email:/^\w+@[a-z0-9]+(\.[a-z]+){1-3}$/,
+        idno:/[1-9]\d{14}|[1-9]\d{17}|[1-9]\d{16}x/
+    }
 
 </script>
 </body>
